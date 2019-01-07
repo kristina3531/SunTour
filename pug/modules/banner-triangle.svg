@@ -1,0 +1,15 @@
+<svg  viewBox="0 0 515 163" style="border: 1px solid black;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <pattern id="pattern1549" patternTransform="matrix(.26 0 0 .26 -305 -2.5)" xlink:href="#pattern828"/>
+  <pattern id="pattern828" width="3200.0001" height="2127" patternTransform="matrix(.26 0 0 .26 -208 -29)" patternUnits="userSpaceOnUse">
+   <!-- <image x="2.6e-14" y="-2.8e-14" width="3200" height="2127" style="image-rendering:optimizeQuality" preserveAspectRatio="none" xlink:href="../../static/img/content/main/slide1.jpg"/> -->
+  </pattern>
+ </defs>
+ <g transform="translate(303 -103)">
+  <g>
+   <path d="M -303,103 H 212 L 211.52084,232.47916 159.06238,222.05971 94,178 0,234 -302,232.8 Z" style="fill-rule:evenodd;fill:url(#pattern1549);paint-order:markers stroke fill"/>
+   <text transform="scale(1 1)" x="57.162331" y="232.32332" style="fill:#000000;font-family:sans-serif;font-size:35px;font-weight:bold;letter-spacing:0px;line-height:1.25;stroke-width:.89;word-spacing:0px" xml:space="preserve"><tspan x="57.162331" y="232.32332" style="font-family:sans-serif;font-weight:bold;stroke-width:.89">320</tspan></text>
+   <text x="62.744026" y="249.86343" style="fill:#000000;font-family:sans-serif;font-size:11px;letter-spacing:0px;line-height:1.25;stroke-width:.26;word-spacing:0px" xml:space="preserve"><tspan x="62.744026" y="249.86343" style="stroke-width:.26">солнечных</tspan><tspan x="62.744026" y="263.09259" style="stroke-width:.26">дней в году</tspan></text>
+  </g>
+ </g>
+</svg>

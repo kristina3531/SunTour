@@ -1,0 +1,60 @@
+main.banner
+  .container
+    .banner-content
+
+      .banner-img
+        img(src="static/img/content/main/slide1.jpg", alt="Banner")
+        //- include ../modules/banner-triangle.svg
+        .banner-badge
+          span.banner-badge__country Тур в Созополь, Болгария
+          span.banner-badge__text код тура
+          span.banner-badge__code 3094119
+          
+      .banner-hotel.hotel
+
+        .hotel-info
+          h4.hotel__name 
+            a.hotel__link(href="#") Aquamarine hotel
+
+          .hotel__stars
+            svg.hotel__star
+              use(xlink:href="static/img/svg/icons.svg#rate-star")
+            svg.hotel__star
+              use(xlink:href="static/img/svg/icons.svg#rate-star")
+            svg.hotel__star
+              use(xlink:href="static/img/svg/icons.svg#rate-star")
+            svg.hotel__star.hotel__star--grey
+              use(xlink:href="static/img/svg/icons.svg#rate-star-grey")
+            svg.hotel__star.hotel__star--grey
+              use(xlink:href="static/img/svg/icons.svg#rate-star-grey")
+
+          span.hotel__price &#36;256
+
+        .hotel-ratings
+
+          .hotel__reviews Оценка отеля
+            br
+            a(href="#") 45 отзывов
+
+          .hotel-rating
+            .hotel-rating__common 8.4
+            .hotel__rating Номер
+              span 8.9
+            .hotel__rating Питание
+              span 8.1
+            .hotel__rating Сервис
+              span 7.9
+            .hotel__rating Инфраструктура
+              span 8.9
+
+        .hotel-showcard
+          span.hotel-showcard__number 320 
+          span.hotel-showcard__text солнечных <br> дней в году 
+
+
+        
+          
+        
+
+
+        

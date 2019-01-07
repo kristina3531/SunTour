@@ -1,0 +1,120 @@
+.social
+  &__link
+    margin 0 3px
+    display inline-block
+    width 34px
+    height 34px
+    border-radius 50%
+    border 2px solid main-color
+    background-color main-color
+    text-align center
+    line-height 29px
+    transition all .3s
+    &:last-child
+      margin-right 0
+    &:hover
+      background-color #fff
+      .social__img
+        fill main-color
+  &__img
+    fill #fff
+    width 20px
+    height 20px
+    transition all .3s
+
+  &--white
+    .social__link
+      background-color #fff
+      &:hover
+        border-color #fff
+        background-color main-color
+        .social__img
+          fill #fff
+    .social__img
+      fill main-color
+  
+
+.hotel
+  position relative
+  display flex
+  flex-wrap wrap
+  &-info, &-ratings, &-rating
+    display flex
+    flex-wrap wrap
+    align-items center
+  &-info
+    margin-bottom 30px
+  &-rating
+    &__common
+      padding 12px 8px
+      margin-right 24px
+      color #fff
+      background-color main-color
+      font-size 24px
+      font-family main-font2
+  &__rating
+    margin-right 16px
+    text-transform uppercase
+    font-size 12px
+    letter-spacing 0.05em
+    span
+      font-size 18px
+      display block
+      font-weight 600
+  &__link
+    font-size 35px
+    line-height 1.1
+    font-family main-font2
+    border-bottom 1px solid rgba(#000, .25)
+    transition all .3s
+    &:hover
+      border-color transparent
+    &.sale
+      color red-color
+      border-color rgba(red-color, .25)
+      &:hover
+        border-color transparent
+  &__subtitle
+    font-size 14px
+    line-height 19px
+  
+  &__star
+    width 27px
+    height 26px
+    fill gold-color
+    &--grey
+      fill grey-color
+
+  &__price
+    font-size 35px
+    font-family main-font2
+    &--old
+      font-size 20px
+      color gray-color2
+      text-decoration line-through
+      text-decoration-color red-color
+
+  &__reviews
+    margin-right 35px
+    font-size 14px
+    line-height 1.3
+    a
+      font-weight 600
+      &:hover
+        text-decoration underline
+  
+  &-showcard
+    position absolute
+    top -30%
+    right 10%
+    span
+      display block
+    &__number
+      font-size 88px
+      font-family main-font2
+      color grey-color2
+    &__text
+      font-size 30px
+  
+ 
+    
