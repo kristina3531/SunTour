@@ -2978,7 +2978,7 @@ img.mfp-img {
   content: '';
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 45%;
   height: 13%;
   background: url("../img/content/main/triangle.png") no-repeat;
@@ -3453,6 +3453,7 @@ button {
 }
 .footer__txt {
   font-size: 12px;
+  line-height: 17px;
 }
 .footer__link {
   color: #00bff3;
@@ -3491,7 +3492,7 @@ button {
   .header-feedback {
     margin-left: 0;
   }
-  .header-social {
+  .header .social {
     margin-left: 0;
   }
   .hotel-showcard {
@@ -3667,6 +3668,15 @@ button {
   }
   .science__whr {
     font-size: 65px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__content {
+    display: block;
+    text-align: center;
+  }
+  .footer__txt {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 502px) {
