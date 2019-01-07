@@ -3617,6 +3617,8 @@ button {
   .science__wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-flow: column;
+        flex-flow: column;
   }
   .science__sidebar {
     padding-top: 30px;
