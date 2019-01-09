@@ -3580,7 +3580,6 @@ button {
 @media screen and (max-width: 680px) {
   .hotel-showcard {
     top: -15%;
-    right: 5%;
   }
   .banner .hotel__tour,
   .banner .hotel__price {
@@ -3715,7 +3714,7 @@ button {
     font-size: 33px;
   }
   .banner-hotel .hotel-showcard__text {
-    font-size: 18px;
+    font-size: 12px;
   }
   .science {
     padding: 20px 0;
@@ -3744,7 +3743,7 @@ button {
 @media screen and (max-width: 400px) {
   .hotel-showcard {
     top: -5%;
-    right: 0;
+    right: 5%;
   }
   .hotel-showcard__text {
     font-size: 16px;
