@@ -3025,11 +3025,10 @@ img.mfp-img {
   color: #fff;
   background-color: #000;
 }
-.banner-hotel .hotel-ratings,
 .banner-hotel .hotel-info {
   width: 60%;
 }
-.banner-hotel .hotel__name,
+.banner-hotel .hotel__tour,
 .banner-hotel .hotel__stars {
   margin-right: 20px;
 }
@@ -3068,7 +3067,7 @@ img.mfp-img {
       justify-content: space-between;
   position: relative;
 }
-.tours .hotel__name {
+.tours .hotel__tour {
   margin-bottom: 10px;
 }
 .tours .hotel__price--old {
@@ -3332,21 +3331,21 @@ button {
   display: block;
   font-weight: 600;
 }
-.hotel__link {
+.hotel__tour {
   font-size: 35px;
   line-height: 1.1;
   font-family: 'Trebuchet MS', sans-serif;
   border-bottom: 1px solid rgba(0,0,0,0.25);
   transition: all 0.3s;
 }
-.hotel__link:hover {
+.hotel__tour:hover {
   border-color: transparent;
 }
-.hotel__link.sale {
+.hotel__tour.sale {
   color: #cb0000;
   border-color: rgba(203,0,0,0.25);
 }
-.hotel__link.sale:hover {
+.hotel__tour.sale:hover {
   border-color: transparent;
 }
 .hotel__subtitle {
@@ -3423,19 +3422,14 @@ button {
 }
 .header-phone {
   margin-left: auto;
-}
-.header-phone__link {
   font-size: 30px;
 }
 .header-feedback {
   margin-left: 25px;
-}
-.header-feedback__link {
-  display: inline-block;
   border-bottom: 1px dashed #fff;
   transition: all 0.3s;
 }
-.header-feedback__link:hover {
+.header-feedback:hover {
   border-color: transparent;
 }
 .header .social {
@@ -3463,18 +3457,7 @@ button {
 .footer__link:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 1000px) {
-  .hotel-ratings,
-  .hotel-info {
-    width: 65%;
-  }
-  .science__title-h2 {
-    font-size: 42px;
-    line-height: 45px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
   .header .container {
     -ms-flex-pack: justify;
         justify-content: space-between;
@@ -3486,134 +3469,13 @@ button {
     width: 140px;
     height: 30px;
   }
-  .header-phone {
-    margin-left: 0;
-  }
-  .header-feedback {
-    margin-left: 0;
-  }
+  .header-phone,
+  .header-feedback,
   .header .social {
     margin-left: 0;
   }
-  .hotel-showcard {
-    top: -22%;
-  }
-  .science__whr {
-    font-size: 75px;
-  }
-  .science__heading {
-    font-size: 25px;
-    line-height: 26px;
-  }
-  .science__txt {
-    font-size: 18px;
-  }
-}
-.banner-badge {
-  left: 5%;
-  bottom: 5%;
-  width: 200px;
-  height: 200px;
-}
-.banner-badge__country {
-  margin-bottom: 5px;
-  font-size: 20px;
-}
-.banner-badge__text {
-  font-size: 10px;
-}
-.banner-badge__code {
-  font-size: 20px;
-}
-@media screen and (max-width: 892px) {
-  .banner .hotel__name {
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .tours .hotel__link,
-  .tours .hotel__price {
-    font-size: 30px;
-  }
-  .tours .hotel__link--old,
-  .tours .hotel__price--old {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 867px) {
-  .hotel-info,
-  .hotel__name,
-  .hotel-rating {
-    margin-bottom: 15px;
-  }
-  .hotel-rating {
-    -ms-flex-order: 1;
-        order: 1;
-  }
-  .hotel__reviews {
-    -ms-flex-order: 2;
-        order: 2;
-  }
-}
-@media screen and (max-width: 800px) {
-  .header .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .header-logo,
-  .header-social {
-    width: 50%;
-  }
-  .header-logo {
-    margin-bottom: 20px;
-  }
-  .header-social {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: right;
-  }
-  .header-heading {
-    -ms-flex-order: 3;
-        order: 3;
-  }
-  .header-heading,
-  .header-phone,
-  .header-feedback {
-    width: 33.33%;
-  }
   .header-phone {
-    -ms-flex-order: 4;
-        order: 4;
-    text-align: center;
-  }
-  .header-phone__link {
-    font-size: 20px;
-  }
-  .header-feedback {
-    -ms-flex-order: 5;
-        order: 5;
-    text-align: right;
-  }
-  .hotel-showcard__number {
-    font-size: 66px;
-  }
-  .hotel-showcard__number {
-    font-size: 77px;
-  }
-  .hotel-showcard__text {
     font-size: 25px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .hotel-rating__common {
-    margin-right: 10px;
-    font-size: 18px;
-  }
-  .hotel__rating {
-    margin-right: 5px;
-    font-size: 10px;
-  }
-  .hotel__rating span {
-    font-size: 14px;
   }
   .science__wrap {
     -ms-flex-wrap: wrap;
@@ -3624,53 +3486,185 @@ button {
   .science__sidebar {
     padding-top: 30px;
     margin: 0 auto;
-    width: 65%;
+    width: 60%;
   }
-}
-@media screen and (max-width: 676px) {
   .banner-badge {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
+    left: 3%;
+    bottom: 5%;
   }
   .banner-badge__country,
   .banner-badge__code {
-    font-size: 18px;
+    font-size: 20px;
   }
-  .hotel__name {
-    margin-right: 0 !important;
-  }
-  .hotel__link,
-  .hotel__price {
+  .banner .hotel__tour,
+  .banner .hotel__price {
     font-size: 30px;
   }
-  .hotel-showcard__number {
-    font-size: 55px;
+  .banner .hotel__star {
+    width: 20px;
+    height: 20px;
   }
-  .hotel-showcard__text {
+}
+@media screen and (max-width: 799px) {
+  .banner .hotel__tour {
+    margin-bottom: 15px;
+  }
+  .banner .hotel__stars {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .banner .hotel__price {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-logo {
+    margin-bottom: 15px;
+  }
+  .header-heading {
+    width: 50%;
+  }
+  .header-heading {
+    -ms-flex-order: 4;
+        order: 4;
+  }
+  .header-feedback {
+    -ms-flex-order: 5;
+        order: 5;
+  }
+  .science__title-h2 {
+    font-size: 35px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+  .science__whr {
+    font-size: 60px;
+  }
+  .science__heading {
+    font-size: 25px;
+    line-height: 27px;
+    margin-bottom: 5px;
+  }
+  .science__txt {
     font-size: 18px;
+    line-height: 23px;
+  }
+  .banner .hotel-showcard {
+    top: -20%;
+  }
+  .banner .hotel-showcard__number {
+    font-size: 66px;
+  }
+  .banner .hotel-showcard__text {
+    font-size: 25px;
+  }
+  .banner .hotel__price--old {
+    font-size: 20px;
   }
   .tours__list {
+    margin: 0 -10px;
+  }
+  .tours__item {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .hotel-showcard {
+    top: -15%;
+    right: 5%;
+  }
+  .banner .hotel__tour,
+  .banner .hotel__price {
+    font-size: 25px;
+  }
+  .banner .hotel__price--old {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner-badge {
+    width: 120px;
+    height: 120px;
+  }
+  .banner-badge__country {
+    margin-bottom: 5px;
+  }
+  .banner-badge__country,
+  .banner-badge__code {
+    font-size: 12px;
+  }
+  .banner-badge__text {
+    font-size: 8px;
+  }
+  .banner .hotel-info {
+    width: 65% !important;
+  }
+  .banner .hotel-ratings {
+    width: 100% !important;
+  }
+  .banner .hotel__tour {
+    margin-bottom: 15px;
+  }
+  .banner .hotel__stars {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .banner .hotel__price {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .banner .hotel__reviews,
+  .banner .hotel-rating__common {
+    margin-right: 10px;
+  }
+  .banner .hotel__rating {
+    margin-right: 5px;
+  }
+  .banner .hotel__rating:last-child {
+    margin-right: 0;
+  }
+  .science__title-h2 {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  .science__txt {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .science__text,
+  .science__uniquetext {
+    margin-bottom: 10px;
+  }
+  .science__uniquetext {
+    padding: 10px 0 10px 42px;
+  }
+  .science__uniquetext::before {
+    width: 4px;
+    left: 20px;
+  }
+  .tours__list,
+  .tours__item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0;
   }
   .tours__item {
     width: 100%;
-    margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .tours__item:last-child {
     margin-bottom: 0;
   }
-  .science__title-h2 {
-    font-size: 35px;
-    line-height: 37px;
-  }
-  .science__whr {
-    font-size: 65px;
-  }
-}
-@media screen and (max-width: 600px) {
   .footer__content {
     display: block;
     text-align: center;
@@ -3679,58 +3673,50 @@ button {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 502px) {
-  .banner-badge {
-    width: 130px;
-    height: 130px;
-  }
-  .banner-badge__country,
-  .banner-badge__code {
-    font-size: 14px;
-  }
-  .hotel-rating {
-    display: none;
-  }
-  .hotel-showcard {
-    right: 5%;
-  }
-  .hotel-showcard__number {
-    font-size: 44px;
-  }
-  .science__text,
-  .science__uniquetext {
-    margin-bottom: 15px;
-  }
-  .science__uniquetext {
-    padding: 10px 0 10px 42px;
-  }
-  .science__uniquetext::before {
-    width: 4px;
-    left: 18px;
-  }
-}
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .header {
-    padding: 20px 0;
+    padding: 15px 0;
   }
-  .header-phone {
-    -ms-flex-order: 5;
-        order: 5;
-    width: 100%;
-    margin-top: 15px;
+  .header-logo {
+    margin-bottom: 10px;
   }
-  .header-heading,
-  .header-feedback {
-    width: 50%;
+  .header-heading {
+    -ms-flex-order: 3;
+        order: 3;
+    margin-bottom: 10px;
   }
   .header-feedback {
     -ms-flex-order: 4;
         order: 4;
   }
-  .hotel-info {
-    width: 100% !important;
+  .header-phone {
+    -ms-flex-order: 5;
+        order: 5;
+    width: 100%;
+    text-align: center;
   }
-  .tours,
+  .hotel__reviews {
+    margin-bottom: 10px;
+  }
+  .banner-hotel .hotel-info {
+    margin-bottom: 15px;
+  }
+  .banner-hotel .hotel__tour {
+    margin-right: 0;
+  }
+  .banner-hotel .hotel__tour,
+  .banner-hotel .hotel__price {
+    font-size: 23px;
+  }
+  .banner-hotel .hotel-showcard {
+    top: -10%;
+  }
+  .banner-hotel .hotel-showcard__number {
+    font-size: 33px;
+  }
+  .banner-hotel .hotel-showcard__text {
+    font-size: 18px;
+  }
   .science {
     padding: 20px 0;
   }
@@ -3743,46 +3729,38 @@ button {
     padding-top: 15px;
   }
   .science__whr {
-    font-size: 45px;
+    font-size: 40px;
   }
   .science__heading {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 22px;
+    margin-bottom: 5px;
   }
   .science__txt {
     font-size: 16px;
+    line-height: 20px;
   }
 }
-@media screen and (max-width: 418px) {
-  .hotel__link {
-    font-size: 22px;
-  }
-  .hotel__star {
-    width: 20px;
-    height: 19px;
-  }
-  .hotel-showcard__number {
-    font-size: 33px;
+@media screen and (max-width: 400px) {
+  .hotel-showcard {
+    top: -5%;
+    right: 0;
   }
   .hotel-showcard__text {
-    font-size: 10px;
-    text-transform: uppercase;
-  }
-}
-@media screen and (max-width: 341px) {
-  .banner .hotel__stars {
-    margin-right: 15px;
-  }
-  .banner .hotel__price {
-    font-size: 22px;
-  }
-  .tours .hotel__link,
-  .tours .hotel__price {
-    font-size: 22px;
-  }
-  .tours .hotel__link--old,
-  .tours .hotel__price--old {
     font-size: 16px;
-    top: 35px;
+  }
+  .hotel__reviews {
+    margin-bottom: 0;
+  }
+  .hotel-rating {
+    display: none;
+  }
+  .tours .hotel__tour,
+  .tours .hotel__price {
+    font-size: 30px;
+  }
+  .tours .hotel__tour--old,
+  .tours .hotel__price--old {
+    font-size: 18px;
   }
 }
