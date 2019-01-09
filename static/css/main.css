@@ -2875,95 +2875,6 @@ img.mfp-img {
     color: black;
 }
 
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('Trebuchet-BoldItalic.eot');
-    src: local('Trebuchet MS Bold Italic'), local('Trebuchet-BoldItalic'),
-        url('Trebuchet-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Trebuchet-BoldItalic.woff') format('woff'),
-        url('Trebuchet-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('TrebuchetMS-Bold.eot');
-    src: local('Trebuchet MS Bold'), local('TrebuchetMS-Bold'),
-        url('TrebuchetMS-Bold.eot?#iefix') format('embedded-opentype'),
-        url('TrebuchetMS-Bold.woff') format('woff'),
-        url('TrebuchetMS-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('TrebuchetMS-Italic.eot');
-    src: local('Trebuchet MS Italic'), local('TrebuchetMS-Italic'),
-        url('TrebuchetMS-Italic.eot?#iefix') format('embedded-opentype'),
-        url('TrebuchetMS-Italic.woff') format('woff'),
-        url('TrebuchetMS-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('TrebuchetMS.eot');
-    src: local('Trebuchet MS'), local('TrebuchetMS'),
-        url('TrebuchetMS.eot?#iefix') format('embedded-opentype'),
-        url('TrebuchetMS.woff') format('woff'),
-        url('TrebuchetMS.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('Trebuchet-BoldItalic.eot');
-    src: local('Trebuchet MS Bold Italic'), local('Trebuchet-BoldItalic'),
-        url('Trebuchet-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Trebuchet-BoldItalic.woff') format('woff'),
-        url('Trebuchet-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('TrebuchetMS-Bold.eot');
-    src: local('Trebuchet MS Bold'), local('TrebuchetMS-Bold'),
-        url('TrebuchetMS-Bold.eot?#iefix') format('embedded-opentype'),
-        url('TrebuchetMS-Bold.woff') format('woff'),
-        url('TrebuchetMS-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('TrebuchetMS-Italic.eot');
-    src: local('Trebuchet MS Italic'), local('TrebuchetMS-Italic'),
-        url('TrebuchetMS-Italic.eot?#iefix') format('embedded-opentype'),
-        url('TrebuchetMS-Italic.woff') format('woff'),
-        url('TrebuchetMS-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Trebuchet MS';
-    src: url('TrebuchetMS.eot');
-    src: local('Trebuchet MS'), local('TrebuchetMS'),
-        url('TrebuchetMS.eot?#iefix') format('embedded-opentype'),
-        url('TrebuchetMS.woff') format('woff'),
-        url('TrebuchetMS.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 .banner {
   padding: 25px 0;
 }
@@ -3249,6 +3160,7 @@ button {
 .container {
   width: 100%;
   max-width: 1070px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -3588,6 +3500,19 @@ button {
   .banner .hotel__price--old {
     font-size: 16px;
   }
+  .tours__list,
+  .tours__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  .tours__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .tours__item:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .banner-badge {
@@ -3650,19 +3575,6 @@ button {
   .science__uniquetext::before {
     width: 4px;
     left: 20px;
-  }
-  .tours__list,
-  .tours__item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 0;
-  }
-  .tours__item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .tours__item:last-child {
-    margin-bottom: 0;
   }
   .footer__content {
     display: block;
